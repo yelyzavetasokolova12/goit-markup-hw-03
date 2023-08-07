@@ -49,12 +49,15 @@ body {
 /* Header */
 
 .header-container {
-  width: 1440px;
+  width:  1158px;
   height: 72px;
+  margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   flex-shrink: 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 header .navigation {
@@ -70,7 +73,8 @@ header .navigation {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   display: inline-flex;
-  padding: 24px;
+  margin-right: 76px;
+  padding: 24px 0;
   align-items: center;
   flex-shrink: 0;
 }
@@ -117,6 +121,7 @@ header .navigation {
   flex-wrap: wrap;
   padding: 24px;
 }
+
 .header-adress-link {
   color: #434455;
   font-size: 16px;
@@ -139,17 +144,12 @@ header .navigation {
 }
 
 .hero-container .container {
+  width: 1440px;
+  height: 72px;
   display: block;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-}
-
-.hero-title-container {
-  max-width: 496px;
-  max-height: 120px;
-  margin: 0 auto;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-shrink: 0;
 }
 
 .hero-title {
@@ -160,12 +160,9 @@ header .navigation {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-}
-
-.hero-btn-container {
-  max-width: 169px;
-  max-height: 56px;
-  margin: 0 auto;
+  max-width: 496px;
+  padding: 188px 0;
+  margin: auto;
 }
 
 .hero-btn {
@@ -177,10 +174,12 @@ header .navigation {
   background: var(--iris, #4d5ae5);
   color: #fff;
   cursor: pointer;
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
+  display: block; 
+  min-width: 169px;
+  height: 56px;
+  border: none; 
+  margin: auto;
+  background-color: #4d5ae5;
   border-radius: 4px;
 }
 
@@ -192,8 +191,11 @@ header .navigation {
 
 /* Benefits styles */
 
-.benefits-container {
+.benefits-container .container {
   display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-shrink: 0;
 }
 
 .visually-hidden {
@@ -212,9 +214,10 @@ header .navigation {
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
   gap: 8px;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 24px;
 }
 
 .benefits-list-subtitle {
@@ -223,6 +226,7 @@ header .navigation {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .benefits-list-desc {
@@ -238,8 +242,9 @@ header .navigation {
   background-color: #f4f4fd;
 }
 
-.case-container {
+.case-container .container{
   display: flex;
+  padding-bottom: 120px; 
 }
 
 .case-title {
@@ -250,19 +255,15 @@ header .navigation {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-}
-
-.case-list-container {
-  justify-content: baseline;
-  margin: 72px;
+  margin-bottom: 72px;
 }
 
 .case-list-item {
-  width: calc((100% - 72px) / 3);
+  width: calc((100% - 48px) / 3);
   gap: 8px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: wrap;
+  gap: 24px;
 }
 
 .case-list-img {
@@ -275,8 +276,9 @@ header .navigation {
   background-color: #f4f4fd;
 }
 
-.team-list-container {
+.team-container .container{
   display: flex;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -287,6 +289,7 @@ header .navigation {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -296,10 +299,16 @@ header .navigation {
 .team-list-item {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
-  gap: 8px;
-  display: inline-flex;
+  gap: 24px;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-container {
+  padding: 32px 0;
+
 }
 
 .team-list-subtitle {
@@ -310,6 +319,8 @@ header .navigation {
   font-weight: 500;
   line-height: 24px; /* 120% */
   letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-list-desc {
@@ -319,6 +330,7 @@ header .navigation {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
+  text-align: center; 
 }
 
 /* footer */
@@ -334,6 +346,7 @@ header .navigation {
   justify-content: space-around;
   align-items: baseline;
   flex-shrink: 0;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -346,10 +359,12 @@ header .navigation {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   background: var(--navyblue, #2e2f42);
-  display: inline-flex;
+  display: inline-block;
+  margin-bottom: 16px;
   padding: 24px;
   align-items: center;
   flex-shrink: 0;
+
 }
 
 .footer-span {
@@ -373,7 +388,8 @@ header .navigation {
 
 .filter-container {
   display: flex;
-  padding: 12px 24px;
+  padding-top: 96px; 
+  padding-bottom: 120px; 
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: baseline;
@@ -385,6 +401,14 @@ header .navigation {
   text-decoration: none;
   list-style: none;
 }
+
+.button-list-items {
+  display: flex; 
+  justify-content: center; 
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
 .filter-button {
   color: #4d5ae5;
   background-color: #f4f4fd;
@@ -395,6 +419,9 @@ header .navigation {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .filter-button:hover,
@@ -402,6 +429,7 @@ header .navigation {
   color: #ffffff;
   background-color: #404bbf;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 /* Rows */
@@ -417,11 +445,24 @@ header .navigation {
 }
 
 .project-list-item {
-  width: calc((100% - 72px) / 3);
+  display: flex;
+  flex-wrap: wrap; 
+  column-gap: 24px; 
+  row-gap: 48px;
+  width: calc((100% - 48px) / 3);
   gap: 8px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.project-img{
+  display: block;
+}
+.project-title-dsc-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; 
+  border-top: none;
 }
 
 .project-list-title {
@@ -433,6 +474,7 @@ header .navigation {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  margin-bottom: 8px;
 }
 .project-list-dsc {
   color: #434455;

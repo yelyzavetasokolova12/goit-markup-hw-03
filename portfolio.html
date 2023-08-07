@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -58,7 +65,7 @@
       <!-- filter -->
       <section>
         <div class="filter-container">
-          <h1 hidden>Filters</h1>
+          <h1 hidden class="visually-hidden">Filters</h1>
           <ul class="button-list list">
             <li>
               <button class="filter-button" type="button">All</button>
@@ -77,10 +84,9 @@
               <button class="filter-button" type="button">Marketing</button>
             </li>
           </ul>
-        </div>
+        
 
         <!-- Rows -->
-        <div class="project-list-container">
           <ul class="project-list list">
             <li class="project-list-item">
               <a class="project-img link" href="#">
@@ -90,10 +96,13 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="project-list-title">
-                  Banking App Interface Concept
-                </h2>
-                <p class="project-list-dsc">App</p>
+                <div class="project-title-dsc-container">
+                  <h2 class="project-list-title">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="project-list-dsc">App</p>
+                </div>
+                
               </a>
             </li>
             <li class="project-list-item">
@@ -104,8 +113,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-title-dsc-container">
                 <h2 class="project-list-title">Cashless Payment</h2>
                 <p class="project-list-dsc">Marketing</p>
+              </div>
               </a>
             </li>
             <li class="project-list-item">
@@ -116,8 +127,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-title-dsc-container">
                 <h2 class="project-list-title">Meditation App</h2>
                 <p class="project-list-dsc">App</p>
+              </div>
               </a>
             </li>
             <li class="project-list-item">
@@ -128,8 +141,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-title-dsc-container">
                 <h2 class="project-list-title">Taxi Service</h2>
                 <p class="project-list-dsc">Marketing</p>
+              </div>
               </a>
             </li>
             <li class="project-list-item">
@@ -140,8 +155,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-title-dsc-container">
                 <h2 class="project-list-title">Screen Illustrations</h2>
                 <p class="project-list-dsc">Design</p>
+              </div>
               </a>
             </li>
             <li class="project-list-item">
@@ -152,8 +169,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-title-dsc-container">
                 <h2 class="project-list-title">Online Courses</h2>
                 <p class="project-list-dsc">Marketing</p>
+              </div>
               </a>
             </li>
             <li class="project-list-item">
@@ -164,8 +183,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-title-dsc-container">
                 <h2 class="project-list-title">Instagram Stories Concept</h2>
                 <p class="project-list-dsc">Design</p>
+              </div>
               </a>
             </li>
             <li class="project-list-item">
@@ -176,8 +197,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-title-dsc-container">
                 <h2 class="project-list-title">Organic Food</h2>
                 <p class="project-list-dsc">Web Site</p>
+              </div>
               </a>
             </li>
             <li class="project-list-item">
@@ -188,8 +211,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-title-dsc-container">
                 <h2 class="project-list-title">Fresh Coffee</h2>
                 <p class="project-list-dsc">Web Site</p>
+              </div>
               </a>
             </li>
           </ul>
