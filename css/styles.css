@@ -48,6 +48,10 @@ body {
 
 /* Header */
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   width:  1158px;
   height: 72px;
@@ -61,7 +65,6 @@ body {
 
 header .navigation {
   display: flex;
-  border-bottom: 1px solid #e7e9fc;
   align-items: center;
 }
 
