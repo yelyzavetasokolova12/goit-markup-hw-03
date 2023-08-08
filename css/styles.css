@@ -461,7 +461,6 @@ header .navigation {
 .project-list-container {
   display: flex;
   margin: 0 auto;
-
 }
 
 .project-list {
@@ -477,10 +476,9 @@ header .navigation {
 
 .project-list-item {
   width: calc((100% - 48px) / 3);
-  padding: 0 16px;
 }
 
-img{
+.img{
   display: block;
 }
 
