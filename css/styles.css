@@ -400,7 +400,8 @@ header .navigation {
 /* Portfolio page */
 
 .portfolio {
-padding-top: 96px; 
+  padding-top: 96px; 
+  padding-bottom: 120px;
 }
 
 /* filter */
