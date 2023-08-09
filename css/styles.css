@@ -413,6 +413,9 @@ header .navigation {
   background: #fff;
   text-decoration: none;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 24px;
