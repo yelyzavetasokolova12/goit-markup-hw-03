@@ -406,7 +406,7 @@ header .navigation {
 
 /* filter */
 
-.filter-container {
+.filter-container .container {
   display: flex;
   padding-top: 96px; 
   padding-bottom: 120px; 
@@ -458,10 +458,12 @@ header .navigation {
 
 /* Rows */
 
-.project-list-container {
-  display: flex;
-  margin: 0 auto;
-}
+.project-list-container .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+ }
+
 
 .project-list {
   background: #fff;
