@@ -458,13 +458,6 @@ header .navigation {
 
 /* Rows */
 
-.project-list-container .container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
- }
-
-
 .project-list {
   background: #fff;
   list-style: none;
