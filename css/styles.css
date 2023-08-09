@@ -407,20 +407,13 @@ header .navigation {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  
 }
 
 .button-list {
   background: #fff;
   text-decoration: none;
   list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between
   align-items: baseline;
   gap: 24px;
 }
