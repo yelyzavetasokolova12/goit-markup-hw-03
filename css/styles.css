@@ -404,14 +404,10 @@ header .navigation {
 /* filter */
 
 .filter-container .container {
-  display: flex;
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline;
-  gap: 24px;
+  
 }
 
 .button-list {
@@ -422,6 +418,11 @@ header .navigation {
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+  align-items: baseline;
+  gap: 24px;
 }
 
 .button-list-items {
