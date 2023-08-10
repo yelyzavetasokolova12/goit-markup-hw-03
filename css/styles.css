@@ -39,11 +39,9 @@ body {
 }
 
 .container {
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: o;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Header */
@@ -460,7 +458,8 @@ header .navigation {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  border: 1px solid var(--cornflower, #e7e9fc);
+  margin: 0;
+  padding: 0;
   background: var(--white, #fff);
 }
 
